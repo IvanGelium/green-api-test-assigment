@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-main: #0e1621;
+  --color-sidebar: #17212b;
+  --color-active-chat: #2b5278;
+  
+  --color-input: #17212b;
+  --color-input-focus: #1f2c3a;
+  
+  --color-hover: #202b36;
+  
+  --color-disabled: #232e3a;
+  --color-disabled-text: #4e5d6c;
+  
+  --color-msg-incoming: #182533;
+  --color-msg-incoming-hover: #202f41;
+  --color-msg-outgoing: #2b5278;
+  --color-msg-outgoing-hover: #356391;
+  
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #f5f5f5;
+  --color-text-muted: #7f91a4;
+  
+  --color-link: #5288c1;
+  --color-link-hover: #6ca1d9;
+  
+  --color-primary: #5288c1; 
+  --color-primary-hover: #6ca1d9;
+  --color-brand-green: #3b9702;
+  --color-brand-purple: #aa3bff;
+  
+  --color-border-main: #101924; 
+  --color-border-input: #243547;
+  --color-border-focus: #5288c1;
+  
+  --color-success: #4cb050; 
+  --color-success-hover: #5cc260;
+  --color-error: #e53935; 
+  --color-error-hover: #eb5350;
+  --color-border-error: #ff4d4d; 
+}
+
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
+  color: var(--color-text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background:var(--color-primary);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:var(--color-primary);
+}
+
